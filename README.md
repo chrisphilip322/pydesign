@@ -15,7 +15,7 @@ Write OpenSCAD with all the niceness of python.
 ```
 python3 -m venv venv
 source venv/bin/activate
-pip install https://github.com/macbeth322/pydesign.git
+pip install git+https://github.com/macbeth322/pydesign.git
 ```
 
 
