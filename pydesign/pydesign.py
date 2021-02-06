@@ -53,7 +53,9 @@ class _Element:
           f.write('////// pydesign source\n')
           f.write(f'////// {src_fname}\n')
           f.write(''.join(f'// {line}' for line in src))
+          f.write('\n')
           f.write(self.render(*args, **kwargs))
+          f.write('\n')
 
 
 @dataclasses.dataclass(frozen=True)
@@ -125,7 +127,6 @@ circle
 square
 polygon
 text
-import
 projection
 sphere
 cube
@@ -149,6 +150,8 @@ difference
 intersection'''.splitlines())
 for name in NAMES:
   locals()[name] = _ElementImpl.partial(name)
+
+Import = _ElementImpl.partial('import')
 
 for name, vec in {
     'Up': (0, 0, 1),

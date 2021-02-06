@@ -10,8 +10,16 @@ macbeth322
 Write OpenSCAD with all the niceness of python.
 
 
-## Usage
+## Installation
 
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install https://github.com/macbeth322/pydesign.git
+```
+
+
+## Usage
 
 ```
 from pydesign import *
@@ -105,7 +113,7 @@ negative direction.
 - `square`
 - `polygon`
 - `text`
-- `import`
+- `Import`
 - `projection`
 - `sphere`
 - `cube`
