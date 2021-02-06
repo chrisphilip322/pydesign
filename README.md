@@ -18,6 +18,8 @@ source venv/bin/activate
 pip install git+https://github.com/macbeth322/pydesign.git
 ```
 
+For use with http://www.openscad.org/
+
 
 ## Usage
 
@@ -52,6 +54,9 @@ literals.
 
 `my_model.render_to_file('output.scad')`: Render my_model to 'output.scad'.
 
+Install OpenSCAD http://www.openscad.org/ and load the output file. The file
+can be reloaded with Ctrl-R in OpenSCAD if the python script is edited and
+rerun.
 
 ## API
 
